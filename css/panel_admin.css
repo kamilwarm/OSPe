@@ -1,0 +1,176 @@
+body{
+  background-color: #303030;
+  color: #ffffff;
+}
+
+.calendar_button{
+	 margin-top: 10%;
+  border-style: hidden;
+  display: block;
+  width:330px;
+  height:203px;
+  background-color: #3095d3;
+  
+}
+.calendar_button:hover{
+  background-color: #2084c2;
+}
+.add_user_button{
+  margin-top: 10%;
+  border-style: hidden;
+  display: block;
+  width:330px;
+  height:203px;
+  background-color: #3115c4;
+}
+.add_user_button:hover{
+  background-color: #2004b3;
+}
+.delete_button{
+  margin-top: 10%;
+  border-style: hidden;
+  width:330px;
+  height:203px;
+  background-color: #555555;
+  display: block;
+}
+.delete_button:hover{
+  background-color: #444444;
+}
+.user_button{
+  margin-top: 10%;
+  border-style: hidden;
+  display: block;
+  width:330px;
+  height:203px;
+  background-color: #8484dd;
+}
+.user_button:hover{
+  background-color: #7373cc;
+}
+.table_button{
+  margin-top: 10%;
+  border-style: hidden;
+  display: block;
+  width:330px;
+  height:203px;
+  background-color: #888888;
+}
+.table_button:hover{
+  background-color: #777777;
+}
+.logout_button{
+  margin-top: 10%;
+  border-style: hidden;
+  display: block;
+  width:330px;
+  height:203px;
+  background-color: #89d89d;
+}
+.logout_button:hover{
+  background-color: #78c78c;
+}
+/*************************koniec*****************/
+/***********DODAWANIE użytkowników**************/
+.register{
+  position: absolute;
+  top: 10%;
+  left: calc(50% - 500px/2);
+  width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background: #202020;
+  letter-spacing: -1px;
+  -webkit-box-shadow: 0 0 2px black;
+  -moz-box-shadow: 0 0 2px black;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px black;
+}
+.user_register{
+  display: block;
+  width: 460px;
+  margin: 0 auto;
+  padding: 10px 5px;
+  border: 1px solid silver;
+  font-size: 14px;
+}
+.user_register:focus{
+  outline: 5px solid #ffffff;
+}
+.register_button{
+  display: block;
+  font-family: sans-serif;
+  background: #202020;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 200px;
+  padding: 5px 20px;
+  margin-top: 20px;
+  margin-left: 30px;
+}
+/******koniec********/
+/*****klawisz cofnij*****/
+.back_button, .back_button_delete_user{
+  border-style: hidden;
+  margin:10px;
+  width:100px;
+  height:80px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #89d89d;
+  float: left;
+  text-align: center;
+}
+/**********koniec*******/
+/********usuwanie*******/
+.container_panel1{
+width: 500px;
+margin-top: 20%;
+padding: 20px;
+background: #202020;
+letter-spacing: -1px;
+-webkit-box-shadow: 0 0 2px black;
+-moz-box-shadow: 0 0 2px black;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border-radius: 5px;
+box-shadow: 0 0 2px black;
+}
+.delete_button_panel{
+  font-family: sans-serif;
+  background: #202020;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  width: 100px;
+  padding: 5px 20px;
+  margin-top: 5px;
+  margin-left: 30px;
+}
+/********koniec********/
+label{
+  display: block;
+  font-family: sans-serif,Arial, Helvetica;
+  width: 200px;
+  padding: 10px 20px;
+  color: #696969;
+  font-size: 20px;
+  text-shadow: 0 0 1px blue;
+}
+h1{
+  font-size: 44px;
+  font-weight: 400;
+  color: #39a5f1;
+  margin-bottom: 20px;
+}
+a.tilelink{
+  color:#000000;
+  text-decoration:none;
+  display:block;
+  width:330px;
+  height:203px;
+}

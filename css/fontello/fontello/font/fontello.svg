@@ -1,0 +1,12 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg xmlns="http://www.w3.org/2000/svg">
+<metadata>Copyright (C) 2018 by original authors @ fontello.com</metadata>
+<defs>
+<font id="fontello" horiz-adv-x="1000" >
+<font-face font-family="fontello" font-weight="400" font-stretch="normal" units-per-em="1000" ascent="850" descent="-150" />
+<missing-glyph horiz-adv-x="1000" />
+<glyph glyph-name="facebook-rect" unicode="&#xf301;" d="M183 850c-102 0-183-81-183-183l0-634c0-102 81-183 183-183l344 0 0 391-104 0 0 141 104 0 0 120c0 94 61 181 201 181 57 0 100-5 100-5l-4-132s-43 1-90 1c-50 0-58-24-58-62l0-103 152 0-6-141-146 0 0-391 141 0c102 0 183 81 183 183l0 634c0 102-81 183-183 183l-634 0z" horiz-adv-x="1000" />
+</font>
+</defs>
+</svg>
