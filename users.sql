@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Czas generowania: 29 Cze 2018, 15:47
+-- Czas generowania: 10 Lip 2018, 15:16
 -- Wersja serwera: 10.1.28-MariaDB
 -- Wersja PHP: 7.1.10
 
@@ -65,20 +65,22 @@ CREATE TABLE `users` (
   `rights` tinyint(1) DEFAULT '0',
   `admin` tinyint(1) NOT NULL DEFAULT '0',
   `last_name` text COLLATE utf8mb4_unicode_ci NOT NULL,
-  `login` char(25) COLLATE utf8mb4_unicode_ci DEFAULT NULL
+  `login` char(25) COLLATE utf8mb4_unicode_ci DEFAULT NULL,
+  `health` date NOT NULL,
+  `firefighter` int(1) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 --
 -- Zrzut danych tabeli `users`
 --
 
-INSERT INTO `users` (`id`, `name`, `pass`, `rights`, `admin`, `last_name`, `login`) VALUES
-(1, 'kamil', '$2y$10$LiLrfStQ7AkeBM6VHRIm1ev/Uy6C.o7sqwDUGz81kMu3xf9Y8Oqxu', 1, 1, 'warmuszok', 'kwarmuszok'),
-(16, 'testy', '$2y$10$KJv.a0T53hXQbYTrMHTi..JP8Cn2OucmU01EWNTsWRFEldPrOL6SW', 1, 0, 'testy', 'testy'),
-(17, 'zaq', '$2y$10$bvK1Z0WAxFZ1ggMYsaGep.pZuAG9JxmXrlaJ0ENhQ6zgb19tubCoy', 1, 0, 'zaq', 'zaq'),
-(30, 'l;', '$2y$10$WpeFjCHR4oLga3e1BXFdWOHaiwMTCmFZyoFMN4MQcG9ONxjmSUy9C', 0, 0, '', ''),
-(31, '', '$2y$10$3eG0TJwKPIN31ODb5LQMsOYQAQLqAiGm3xHfpYgXXNbUm7UeCWoD.', 0, 0, '', ''),
-(32, 'testowy', '$2y$10$SJjruSE6bFw.Eo7wi7hhtutL0Ry/e/9oldKbDdrZrvfpjMRTvfbd6', 0, 0, 'testowy', 'testowy');
+INSERT INTO `users` (`id`, `name`, `pass`, `rights`, `admin`, `last_name`, `login`, `health`, `firefighter`) VALUES
+(1, 'kamil', '$2y$10$LiLrfStQ7AkeBM6VHRIm1ev/Uy6C.o7sqwDUGz81kMu3xf9Y8Oqxu', 0, 1, 'warmuszok', 'kwarmuszok', '2018-07-01', 1),
+(16, 'testy', '$2y$10$KJv.a0T53hXQbYTrMHTi..JP8Cn2OucmU01EWNTsWRFEldPrOL6SW', 0, 0, 'testy', 'testy', '2018-07-09', 0),
+(17, 'zaq', '$2y$10$bvK1Z0WAxFZ1ggMYsaGep.pZuAG9JxmXrlaJ0ENhQ6zgb19tubCoy', 0, 0, 'zaq', 'zaq', '2018-07-16', 0),
+(30, 'l;', '$2y$10$WpeFjCHR4oLga3e1BXFdWOHaiwMTCmFZyoFMN4MQcG9ONxjmSUy9C', 0, 0, '', '', '0000-00-00', 1),
+(31, '', '$2y$10$3eG0TJwKPIN31ODb5LQMsOYQAQLqAiGm3xHfpYgXXNbUm7UeCWoD.', 0, 0, '', '', '0000-00-00', NULL),
+(32, 'testowy', '$2y$10$SJjruSE6bFw.Eo7wi7hhtutL0Ry/e/9oldKbDdrZrvfpjMRTvfbd6', 0, 0, 'testowy', 'testowy', '2018-07-22', NULL);
 
 --
 -- Indeksy dla zrzutów tabel
