@@ -49,7 +49,7 @@ if(isset($login) && isset($pass)){
 				<input type="password" class="form-control" name="password" id="pass_login" placeholder="Hasło" required="required">
 			</div>        
 			<div class="form-group">
-				<button type="submit" class="btn btn-primary btn-lg btn-block">Loguj</button>
+				<button type="submit" class="btn btn-primary btn-lg btn-block"><span class="glyphicon glyphicon-fire"></span>Loguj</button>
 			</div>
 		</form>
 		<h5 class="text-center color-white">System dostępny wyłącznie dla zarejestrowanych użytkowników</h5>

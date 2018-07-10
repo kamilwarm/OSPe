@@ -453,8 +453,7 @@ if(!String.prototype.formatNum) {
 		data.start = new Date(this.options.position.start.getTime());
 		data.lang = this.locale;
 
-		this.context.append(this.options.templates[this.options.view](data));
-		this._update();
+		
 	};
 
 	Calendar.prototype._format_hour = function(str_hour, leadingZero) {

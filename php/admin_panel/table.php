@@ -13,7 +13,9 @@
 		  <th>Login</th>
           <th>Imie</th>
           <th>Nazwisko</th>
-          <th>Gotowość</th>
+          <th>Badania</th>
+		  <th>Strażak</th>
+		  <th>Gotowość</th>
         </tr>
       </thead>
     </table>

@@ -19,6 +19,12 @@ function generateUserTable(callback){
             "\n<td>" +
               "\n<font color='" + color +"'>" + user.last_name +
             "\n</td>" +
+			 "\n<td>" +
+              "\n<font color='" + color +"'>" + user.health +
+            "\n</td>" +
+			 "\n<td>" +
+              "\n<font color='" + color +"'>" + user.firefighter +
+            "\n</td>" +
             "\n<td>" +
               "\n<input type='checkbox' user_id=" + user.id + " " + checked + " ></input>" +
             "\n</td>" +
