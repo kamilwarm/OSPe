@@ -12,7 +12,7 @@ if(!isset($_GET['action'])){
 }
 else if ($_SESSION['admin'] == 1 && $_GET['action'] == "calendar_admin"){
   include ("php/auth/auth_controller.php");
-  include ("calendar/index.html");
+  include ("calendar/index.php");
 }
 else if ($_SESSION['admin'] == 1 && $_GET['action'] == "add_user"){
   include ("php/auth/auth_controller.php");
