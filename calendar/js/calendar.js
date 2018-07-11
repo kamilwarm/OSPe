@@ -963,7 +963,6 @@ if(!String.prototype.formatNum) {
 							url: buildEventsUrl(source, params),
 							dataType: 'json',
 							type: 'GET',
-							async: false,
 							headers: self.options.headers,
 						}).done(function(json) {
 							if(!json.success) {
@@ -1015,7 +1014,6 @@ if(!String.prototype.formatNum) {
 			url: self._templatePath(name),
 			dataType: 'html',
 			type: 'GET',
-			async: false,
 			cache: this.options.tmpl_cache
 		}).done(function(html) {
 			self.options.templates[name] = _.template(html);
@@ -1097,7 +1095,7 @@ if(!String.prototype.formatNum) {
 
 							case "ajax":
 								$.ajax({
-									url: url, dataType: "html", async: false, success: function(data) {
+									url: url, dataType: "html", success: function(data) {
 										modal_body.html(data);
 									}
 								});
