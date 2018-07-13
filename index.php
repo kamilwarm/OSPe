@@ -1,5 +1,13 @@
 <?php
 session_start();
+
+/* AJAX ROUTES */
+if ($_GET['action'] == "calendar_feed"){
+  include ("php/auth/auth_controller.php");
+  include ("new_calendar/feed.php");
+  exit;
+}
+
 include ("php/global/header.php");
 
 if(!isset($_GET['action'])){
@@ -12,7 +20,7 @@ if(!isset($_GET['action'])){
 }
 else if ($_SESSION['admin'] == 1 && $_GET['action'] == "calendar_admin"){
   include ("php/auth/auth_controller.php");
-  include ("calendar/index.php");
+  include ("new_calendar/index.php");
 }
 else if ($_SESSION['admin'] == 1 && $_GET['action'] == "add_user"){
   include ("php/auth/auth_controller.php");
@@ -39,7 +47,7 @@ else if ($_SESSION['admin'] == 1 && $_GET['action'] == "delete_user"){
 } else if ($_GET['action'] == "calendar_user"){
   include ("php/auth/auth_controller.php");
   include ("php/kalendarz/calendar.php");
-  
+
 } else if ($_GET['action'] == "user_panel1"){
   include ("php/auth/auth_controller.php");
   include ("php/user_panel/panel1.php");
