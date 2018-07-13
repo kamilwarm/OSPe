@@ -58,7 +58,7 @@ else if ($_SESSION['admin'] == 1 && $_GET['action'] == "delete_user"){
 }
 
 //WYLOGOWANIE//
-else if ($_GET['action'] == "logout"){
+  else if ($_GET['action'] == "logout"){
   include ("php/auth/auth_controller.php");
   include ("php/global/logout.php");
 }
